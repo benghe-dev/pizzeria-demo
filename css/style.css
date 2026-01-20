@@ -75,7 +75,11 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 }
 
 h1 { font-size: 4.5rem; line-height: 1; margin-bottom: 25px; font-weight: 800; letter-spacing: -2px; }
-.outline { -webkit-text-stroke: 1px var(--white); color: transparent; }
+.outline { 
+    color: var(--accent);      /* Arancione pieno */
+    -webkit-text-stroke: 0;    /* Rimuove il bordo che dava problemi */
+    text-shadow: 0 0 20px rgba(255, 77, 0, 0.4); /* Aggiunge un leggero bagliore */
+}
 
 .hero p { font-size: 1.25rem; color: #ddd; max-width: 500px; margin-bottom: 40px; }
 
