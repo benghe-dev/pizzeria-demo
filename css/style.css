@@ -437,7 +437,7 @@ h1 {
 
 /* --- SEZIONE MENU LIST --- */
 .menu-list-section {
-    padding: 0 0 100px;
+    padding: 100px 0;
     /* Niente padding sopra perché c'è la sezione bento */
     background: var(--bg);
 }
