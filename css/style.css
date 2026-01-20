@@ -668,15 +668,22 @@ h1 {
     opacity: 0.6;
 }
 
-/* MOBILE */
+/* --- MOBILE --- */
 @media (max-width: 950px) {
     .desk-only {
         display: none;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    /* FIX: Spingiamo giù il contenuto per non farlo coprire dalla Navbar */
+    .hero-content {
+        padding-top: 140px;
     }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    /* Titolo leggermente più piccolo per stare meglio */
 
     .hero-btns {
         flex-direction: column;
