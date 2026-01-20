@@ -1,20 +1,26 @@
-/* --- RESET & VARIABILI --- */
+/* --- RESET & VARIABILI (Gold & Red Edition - Allo Scricchio) --- */
 :root {
     --bg: #0f0f0f;
-    /* Nero morbido elegante */
-    --bg-darker: #0a0a0a;
-    /* Nero più profondo per sezioni alternate */
-    --card-bg: #1a1a1a;
-    /* Colore dei box */
-    --accent: #ff4d00;
-    /* Arancione Moderno */
+    /* Nero profondo */
+    --bg-darker: #050505;
+    /* Nero quasi assoluto */
+    --card-bg: #141414;
+    /* Grigio scuro per le card */
+
+    /* ORO CALDO (Primario: Valore, Prezzi, Titoli) */
+    --accent: #ffb703;
+
+    /* NUOVO ROSSO VIVO (Secondario: Fuoco, Passione, Brand) */
+    --red-accent: #e63946;
+
     --white: #ffffff;
     --gray: #9ca3af;
 
     --font: 'Plus Jakarta Sans', sans-serif;
     --radius: 16px;
-    --border: 1px solid rgba(255, 255, 255, 0.1);
-    /* Bordo sottile elegante */
+
+    /* Bordo sottilissimo dorato */
+    --border: 1px solid rgba(255, 183, 3, 0.15);
 }
 
 * {
@@ -68,7 +74,7 @@ a {
     background-color: var(--bg-darker);
 }
 
-/* --- NAVBAR SOLIDA --- */
+/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -84,9 +90,8 @@ a {
 }
 
 .navbar.scrolled {
-    background: rgba(15, 15, 15, 0.98);
-    /* Quasi solido */
-    backdrop-filter: blur(15px);
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(12px);
     border-bottom: var(--border);
     padding: 15px 30px;
 }
@@ -95,10 +100,12 @@ a {
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
+/* IL PUNTO DEL LOGO DIVENTA ROSSO (Richiamo al brand) */
 .logo .accent {
-    color: var(--accent);
+    color: var(--red-accent);
 }
 
 .nav-actions {
@@ -117,22 +124,24 @@ a {
     color: var(--white);
 }
 
+/* Bottone resta Oro per contrasto */
 .nav-btn {
     background: var(--accent);
-    color: var(--white);
+    color: #000;
     padding: 12px 28px;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 4px 15px rgba(255, 77, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 183, 3, 0.2);
 }
 
 .nav-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 77, 0, 0.4);
+    box-shadow: 0 0 30px rgba(255, 183, 3, 0.4);
+    background: #ffc300;
 }
 
 /* --- HERO SECTION --- */
@@ -150,7 +159,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
     filter: brightness(0.35);
     z-index: -1;
 }
@@ -162,17 +171,28 @@ a {
     padding-top: 60px;
 }
 
+/* Badge "Dal 1993" - Con tocco ROSSO FUOCO */
 .badge {
-    background: rgba(255, 77, 0, 0.15);
-    color: var(--accent);
-    border: 1px solid var(--accent);
+    background: rgba(230, 57, 70, 0.1);
+    /* Sfondo rossiccio */
+    color: var(--white);
+    border: 1px solid var(--red-accent);
     padding: 8px 18px;
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 30px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* L'icona del fuoco nel badge è rossa */
+.badge i {
+    color: var(--red-accent);
+    margin-right: 10px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -183,15 +203,11 @@ h1 {
     letter-spacing: -2px;
 }
 
+/* Scritta SCRICCHIO Oro Luminoso */
 .outline {
-    /* Togliamo il text-stroke che crea difetti su V e A */
     -webkit-text-stroke: 0;
-
-    /* Mettiamo il colore pieno */
     color: var(--accent);
-
-    /* Aggiungiamo un leggero bagliore per farlo sembrare "luminoso" */
-    text-shadow: 0 0 30px rgba(255, 77, 0, 0.4);
+    text-shadow: 0 0 40px rgba(255, 183, 3, 0.35);
 }
 
 .hero p {
@@ -209,28 +225,29 @@ h1 {
 
 .btn-primary {
     background: var(--accent);
-    color: var(--white);
+    color: #000;
     padding: 18px 36px;
-    border-radius: 10px;
-    font-weight: 700;
+    border-radius: 12px;
+    font-weight: 800;
     font-size: 1.1rem;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(255, 77, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(255, 183, 3, 0.3);
 }
 
 .btn-outline {
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--white);
     padding: 18px 36px;
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1.1rem;
+    backdrop-filter: blur(5px);
 }
 
 .btn-outline:hover {
@@ -239,7 +256,7 @@ h1 {
     border-color: var(--white);
 }
 
-/* --- SEZIONE: STEPS --- */
+/* --- STEPS --- */
 .steps-section {
     padding: 100px 0;
 }
@@ -247,8 +264,10 @@ h1 {
 .sub-header {
     color: var(--accent);
     font-size: 0.9rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
+    font-weight: 700;
+    opacity: 0.9;
 }
 
 .section-header h2 {
@@ -264,7 +283,7 @@ h1 {
 }
 
 .step-item {
-    padding: 30px;
+    padding: 40px 30px;
     border: var(--border);
     border-radius: var(--radius);
     background: var(--card-bg);
@@ -274,35 +293,39 @@ h1 {
 .step-item:hover {
     border-color: var(--accent);
     transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .step-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: var(--bg);
-    border: 2px solid var(--accent);
+    border: 1px solid var(--accent);
     color: var(--accent);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto 25px;
+    box-shadow: 0 0 20px rgba(255, 183, 3, 0.1);
 }
 
 .accent-icon {
     background: var(--accent);
-    color: var(--white);
+    color: #000;
+    box-shadow: 0 0 30px rgba(255, 183, 3, 0.4);
 }
 
 .step-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
 .step-item p {
     color: var(--gray);
+    font-size: 1rem;
 }
 
 /* --- BENTO GRID --- */
@@ -321,15 +344,14 @@ h1 {
     overflow: hidden;
     position: relative;
     border: var(--border);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .grid-item:hover {
-    border-color: var(--gray);
+    border-color: var(--accent);
     transform: translateY(-5px);
 }
 
-/* Card Scura Dettagliata */
 .dark-card {
     background: var(--card-bg);
     padding: 40px;
@@ -348,15 +370,18 @@ h1 {
 .card-icon {
     font-size: 2.5rem;
     color: var(--accent);
+    filter: drop-shadow(0 0 10px rgba(255, 183, 3, 0.3));
 }
 
 .card-tag {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 5px 12px;
-    border-radius: 30px;
+    background: rgba(255, 183, 3, 0.1);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 50px;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
+    border: 1px solid rgba(255, 183, 3, 0.2);
 }
 
 .dark-card h2 {
@@ -367,42 +392,42 @@ h1 {
 
 .dark-card p {
     color: var(--gray);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
-/* Card Foto */
 .photo-card {
-    height: 400px;
+    height: 420px;
 }
 
 .photo-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .photo-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .photo-tag {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 25px;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    padding: 8px 15px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
     border-radius: 50px;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--accent);
 }
 
-/* Card Accento */
+/* Card TEMPERATURE con tocco ROSSO */
 .accent-card {
     background: var(--accent);
-    color: var(--white);
+    color: #000;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -410,19 +435,44 @@ h1 {
     align-items: center;
     text-align: center;
     border: none;
+    position: relative;
+    overflow: hidden;
 }
 
+.accent-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+    opacity: 0.5;
+}
+
+/* Il titolo "TEMPERATURE" lo facciamo rosso fuoco */
 .accent-card h3 {
-    opacity: 0.9;
+    color: var(--red-accent);
+    opacity: 1;
     font-size: 1rem;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    z-index: 2;
 }
 
 .big-number {
-    font-size: 4.5rem;
-    font-weight: 800;
+    font-size: 5rem;
+    font-weight: 900;
     line-height: 1;
+    z-index: 2;
+    letter-spacing: -2px;
+}
+
+.accent-card p {
+    font-weight: 700;
+    z-index: 2;
+    margin-top: 10px;
 }
 
 .item-large {
@@ -435,22 +485,26 @@ h1 {
     height: auto;
 }
 
-/* --- SEZIONE MENU LIST --- */
+/* --- LISTINO --- */
 .menu-list-section {
     padding: 100px 0;
-    /* Niente padding sopra perché c'è la sezione bento */
     background: var(--bg);
 }
 
 .cat-title {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
     display: inline-block;
     width: 100%;
-    font-family: var(--font);
+    font-weight: 800;
     letter-spacing: 1px;
+}
+
+/* La stella delle Speciali è ROSSA */
+.cat-title i {
+    color: var(--red-accent);
 }
 
 .text-accent {
@@ -461,9 +515,7 @@ h1 {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* 2 Colonne */
-    gap: 30px 60px;
-    /* Spazio verticale e orizzontale */
+    gap: 40px 60px;
 }
 
 .menu-item {
@@ -473,49 +525,44 @@ h1 {
 }
 
 .menu-item:hover {
-    transform: translateX(5px);
+    transform: translateX(10px);
 }
 
 .menu-top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 8px;
 }
 
 .menu-item h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .price {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--accent);
+    text-shadow: 0 0 10px rgba(255, 183, 3, 0.2);
 }
 
 .ingredients {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--gray);
     font-style: italic;
-    line-height: 1.5;
 }
 
-/* Stile per le pizze speciali */
 .highlight-item h4 {
     color: var(--accent);
 }
 
 .highlight-item {
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 77, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 183, 3, 0.3);
 }
 
-
-/* --- FOOTER COMPLETO --- */
+/* --- FOOTER --- */
 .footer-section {
     background: var(--bg-darker);
     padding: 100px 0 30px;
@@ -531,38 +578,40 @@ h1 {
 
 .brand-col p {
     color: var(--gray);
-    max-width: 300px;
-    margin-top: 20px;
+    max-width: 350px;
+    margin-top: 25px;
+    font-size: 1.05rem;
 }
 
 .footer-social a {
     display: inline-flex;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     background: var(--card-bg);
     border: var(--border);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
     color: var(--white);
     transition: 0.3s;
+    font-size: 1.2rem;
 }
 
 .footer-social a:hover {
     background: var(--accent);
     border-color: var(--accent);
+    color: #000;
+    transform: scale(1.1);
 }
 
 .footer-col h4 {
     font-size: 1.1rem;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
-
-.footer-links,
-.footer-hours {
-    list-style: none;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: var(--white);
+    font-weight: 800;
+    opacity: 0.5;
 }
 
 .footer-links li {
@@ -570,46 +619,53 @@ h1 {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    color: var(--gray);
 }
 
 .footer-links i {
     font-size: 1.2rem;
+    color: var(--accent);
 }
 
 .footer-links a:hover {
-    color: var(--accent);
+    color: var(--white);
+    text-decoration: underline;
 }
 
 .footer-hours li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.footer-hours span {
-    color: var(--gray);
-}
-
+/* Badge consegna con tocco ROSSO */
 .delivery-badge {
-    background: rgba(255, 77, 0, 0.1);
-    color: var(--accent);
-    padding: 15px;
-    border-radius: 10px;
+    background: rgba(230, 57, 70, 0.05);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    border: 1px dashed var(--red-accent);
+}
+
+/* Icona moto rossa */
+.delivery-badge i {
+    color: var(--red-accent);
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 30px;
-    border-top: var(--border);
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     color: var(--gray);
     font-size: 0.9rem;
+    opacity: 0.6;
 }
 
 /* MOBILE */
@@ -647,22 +703,6 @@ h1 {
 
     .photo-card {
         height: 300px;
-    }
-
-    .footer-col {
-        text-align: center;
-    }
-
-    .footer-links li {
-        justify-content: center;
-    }
-
-    .brand-col p {
-        margin: 20px auto;
-    }
-
-    .footer-social {
-        justify-content: center;
     }
 
     .menu-grid {
