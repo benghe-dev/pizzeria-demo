@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Da Mario | La Vera Pizza a Dolo</title>
-    <meta name="description" content="Pizzeria con forno a legna a Dolo. Impasto a lunga lievitazione e ingredienti DOP.">
+    <title>PLUTO PIZZA | Modern Delivery</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -18,220 +17,118 @@
 </head>
 <body>
 
-    <header class="header" id="header">
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fa-solid fa-pizza-slice"></i> DA<span>MARIO</span>
-            </div>
-            
-            <nav class="nav" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#menu" class="nav-link">Il Menu</a>
-                <a href="#chi-siamo" class="nav-link">La Storia</a>
-                <a href="#contatti" class="btn-nav">Ordina Ora</a>
-            </nav>
+    <nav class="navbar">
+        <div class="logo">PLUTO<span class="accent">.</span></div>
+        <div class="nav-actions">
+            <a href="tel:+39000000" class="nav-link"><i class="fa-solid fa-phone"></i> Chiama</a>
+            <a href="#menu" class="nav-btn">ORDINA</a>
+        </div>
+    </nav>
 
-            <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="badge" data-aos="fade-down">ASPORTO & DELIVERY DOLO</span>
+            <h1 data-aos="fade-up">PIZZA<br><span class="outline">EVOLUTA.</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Dimentica la solita pizza. Impasti ad alta idratazione, croccantezza estrema e ingredienti che spaccano.</p>
+            
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="200">
+                <a href="#menu" class="btn-primary">Vedi il Menu</a>
+                <a href="https://wa.me/390000000" class="btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
             </div>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="container hero-content">
-            <div class="badge-container" data-aos="fade-down" data-aos-delay="100">
-                <span class="badge"><i class="fa-solid fa-fire"></i> Forno a legna dal 1998</span>
+    <section id="menu" class="bento-section">
+        <div class="container">
+            <div class="grid-layout">
+                
+                <div class="grid-item item-large dark-card" data-aos="fade-up">
+                    <div class="card-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                    <div class="card-text">
+                        <h3>IL CONCETTO</h3>
+                        <h2>Non è la solita napoletana.</h2>
+                        <p>Cornicione alto, base croccante. 48 ore di lievitazione per una pizza che non ti rimane sullo stomaco.</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-tall photo-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza">
+                    <div class="photo-tag">BEST SELLER</div>
+                </div>
+
+                <div class="grid-item accent-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>IDRATAZIONE</h3>
+                    <div class="big-number">85%</div>
+                    <p>Leggerezza Assoluta</p>
+                </div>
+
+                <div class="grid-item photo-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ingredienti">
+                    <div class="photo-tag">DOP</div>
+                </div>
+
+                <div class="grid-item item-large dark-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="card-text">
+                        <h3>MATERIE PRIME</h3>
+                        <h2>Solo eccellenze italiane.</h2>
+                        <p>Pomodoro San Marzano, Fiordilatte dei Monti Lattari, Olio EVO siciliano. Niente compromessi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti" class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-cta" data-aos="fade-right">
+                <h2>Prenota il<br>tuo asporto.</h2>
+                <p>Siamo aperti da Martedì a Domenica.</p>
             </div>
             
-            <h1 data-aos="fade-up" data-aos-delay="200">
-                La vera felicità <br> 
-                <span class="text-gradient">è rotonda.</span>
-            </h1>
-            
-            <p data-aos="fade-up" data-aos-delay="400">
-                Impasto a 48 ore di lievitazione, pomodoro San Marzano e tanta passione. 
-                Vieni a provarla a Dolo o ordinala a casa.
-            </p>
-            
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
-                <a href="#contatti" class="btn btn-primary pulse-anim">Prenota Tavolo <i class="fa-solid fa-utensils"></i></a>
-                <a href="https://wa.me/39000000000" class="btn btn-glass">Delivery <i class="fa-solid fa-motorcycle"></i></a>
+            <div class="footer-links" data-aos="fade-left">
+                <a href="tel:+39041000000" class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span>CHIAMA ORA</span>
+                        <strong>041 123 4567</strong>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/390000000" class="contact-box">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <span>SCRIVICI</span>
+                        <strong>WhatsApp Ordini</strong>
+                    </div>
+                </a>
+                
+                <div class="contact-box plain">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span>DOVE SIAMO</span>
+                        <strong>Via Garibaldi 10, Dolo</strong>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="custom-shape-divider-bottom-1680000000">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
+        <div class="copyright">
+            &copy; 2026 Pluto Pizza. All rights reserved.
         </div>
     </section>
-
-    <section id="menu" class="features section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h3>PERCHÉ SCEGLIERE NOI</h3>
-                <h2>Non la solita pizza</h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="grid-3">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-wrapper color-1">
-                        <i class="fa-solid fa-wheat-awn"></i>
-                    </div>
-                    <h3>Impasto Leggero</h3>
-                    <p>Utilizziamo farine macinate a pietra e lasciamo riposare l'impasto per almeno 48 ore. Alta digeribilità garantita.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-wrapper color-2">
-                        <i class="fa-solid fa-leaf"></i>
-                    </div>
-                    <h3>Ingredienti DOP</h3>
-                    <p>Mozzarella di bufala campana, pomodoro San Marzano e olio EVO. Solo il meglio del Made in Italy.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-wrapper color-3">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <h3>Consegna Rapida</h3>
-                    <p>Arriviamo a casa tua con la pizza ancora fumante. Copriamo tutta la zona di Dolo e dintorni.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="chi-siamo" class="split-section section-padding bg-light">
-        <div class="container split-container">
-            <div class="split-image-wrapper" data-aos="fade-right">
-                <img src="https://images.unsplash.com/photo-1542834371-410a355b3b15?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Forno a legna" class="main-img">
-                <div class="floating-card">
-                    <i class="fa-solid fa-award"></i>
-                    <div>
-                        <h4>Eccellenza</h4>
-                        <p>Dal 1998</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="split-text" data-aos="fade-left">
-                <h3>LA NOSTRA STORIA</h3>
-                <h2>L'amore per la tradizione,<br>un morso alla volta.</h2>
-                <p>Siamo nati come una piccola bottega e oggi siamo il punto di riferimento per chi cerca la vera pizza a Dolo. Il nostro segreto? Non abbiamo segreti, solo tanta pazienza e ingredienti freschi ogni mattina.</p>
-                
-                <ul class="benefit-list">
-                    <li><i class="fa-solid fa-check"></i> Forno rigorosamente a legna</li>
-                    <li><i class="fa-solid fa-check"></i> Sale interno ed esterno</li>
-                    <li><i class="fa-solid fa-check"></i> Birre artigianali locali</li>
-                </ul>
-                
-                <a href="#contatti" class="btn btn-secondary">Prenota un tavolo</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat-item" data-aos="zoom-in">
-                <h2>48h</h2>
-                <p>Lievitazione</p>
-            </div>
-            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
-                <h2>350°</h2>
-                <p>Temperatura Forno</p>
-            </div>
-            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                <h2>100%</h2>
-                <p>Amore</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contatti" class="contact-section section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h3>PRENOTAZIONI E DELIVERY</h3>
-                <h2>Hai fame? Contattaci.</h2>
-                <div class="line"></div>
-                <p style="margin-top: 20px; color: var(--text-body);">
-                    Siamo aperti tutti i giorni tranne il Martedì. <br>Dalle 18:00 alle 23:30.
-                </p>
-            </div>
-
-            <div class="contact-grid">
-                <a href="tel:+39041000000" class="contact-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-circle">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Prenota Tavolo</h3>
-                    <p>Chiama per assicurarti un posto</p>
-                    <span class="action-link">041 123 4567</span>
-                </a>
-
-                <a href="https://wa.me/39333000000" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-circle whatsapp-color">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <h3>Ordina su WhatsApp</h3>
-                    <p>Scrivici cosa vuoi mangiare</p>
-                    <span class="action-link">Inizia Chat</span>
-                </a>
-
-                <a href="https://goo.gl/maps/xyz" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-circle map-color">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3>Vieni a trovarci</h3>
-                    <p>Via Garibaldi 10, Dolo (VE)</p>
-                    <span class="action-link">Apri Mappa</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2>DA<span>MARIO</span></h2>
-                    <p>La vera pizza a Dolo.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
-                </div>
-            </div>
-            <hr>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Pizzeria Da Mario. P.IVA 000000000.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Allergeni</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/39000000000" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 800, offset: 100, once: true });
+        AOS.init({ duration: 800, once: true, offset: 50 });
         
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        const header = document.getElementById('header');
+        // Navbar scroll effect solido
+        const nav = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) { header.classList.add('scrolled'); } 
-            else { header.classList.remove('scrolled'); }
+            if (window.scrollY > 20) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
         });
     </script>
 </body>
