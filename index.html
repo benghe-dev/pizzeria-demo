@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLUTO PIZZA | Modern Delivery</title>
-    
+    <title>NERO PIZZA | Premium Delivery</title>
+    <meta name="description"
+        content="Pizzeria d'asporto e domicilio contemporanea a Dolo. Impasti ad alta idratazione e ingredienti premium.">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar">
-        <div class="logo">PLUTO<span class="accent">.</span></div>
+        <div class="logo">NERO<span class="accent">.</span></div>
         <div class="nav-actions">
-            <a href="tel:+39000000" class="nav-link"><i class="fa-solid fa-phone"></i> Chiama</a>
-            <a href="#menu" class="nav-btn">ORDINA</a>
+            <a href="#come-funziona" class="nav-link desk-only">Come Funziona</a>
+            <a href="#menu" class="nav-link desk-only">Filosofia</a>
+            <a href="#listino" class="nav-link desk-only">Listino</a>
+            <a href="https://wa.me/390000000" class="nav-btn"><i class="fa-brands fa-whatsapp"></i> ORDINA</a>
         </div>
     </nav>
 
@@ -31,50 +39,90 @@
         <div class="container hero-content">
             <span class="badge" data-aos="fade-down">ASPORTO & DELIVERY DOLO</span>
             <h1 data-aos="fade-up">PIZZA<br><span class="outline">EVOLUTA.</span></h1>
-            <p data-aos="fade-up" data-aos-delay="100">Dimentica la solita pizza. Impasti ad alta idratazione, croccantezza estrema e ingredienti che spaccano.</p>
-            
+            <p data-aos="fade-up" data-aos-delay="100">Impasti ad alta idratazione, ingredienti di ricerca e un servizio
+                delivery pensato per farla arrivare perfetta.</p>
+
             <div class="hero-btns" data-aos="fade-up" data-aos-delay="200">
-                <a href="#menu" class="btn-primary">Vedi il Menu</a>
-                <a href="https://wa.me/390000000" class="btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="#listino" class="btn-primary">Esplora il Menu</a>
+                <a href="tel:+390000000" class="btn-outline"><i class="fa-solid fa-phone"></i> Chiama Pizzeria</a>
             </div>
         </div>
     </header>
 
-    <section id="menu" class="bento-section">
+    <section id="come-funziona" class="steps-section">
         <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h3 class="sub-header">SEMPLICE E VELOCE</h3>
+                <h2>Dall'ordine al divano.</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-icon">1</div>
+                    <h3>Scegli e Clicca</h3>
+                    <p>Guarda il menu digitale e mandaci l'ordine su WhatsApp o chiamaci.</p>
+                </div>
+                <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">2</div>
+                    <h3>Forno a Legna</h3>
+                    <p>La tua pizza viene preparata al momento e cotta a 400°C.</p>
+                </div>
+                <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-icon accent-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                    <h3>Arrivo Flash</h3>
+                    <p>I nostri rider partono subito con box termici riscaldati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="bento-section bg-darker">
+        <div class="container">
+            <div class="section-header text-center mb-60" data-aos="fade-up">
+                <h3 class="sub-header">IL NOSTRO METODO</h3>
+                <h2>Qualità senza compromessi.</h2>
+            </div>
+
             <div class="grid-layout">
-                
+
                 <div class="grid-item item-large dark-card" data-aos="fade-up">
-                    <div class="card-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                    <div class="card-top">
+                        <div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                        <span class="card-tag">IMPASTO</span>
+                    </div>
                     <div class="card-text">
-                        <h3>IL CONCETTO</h3>
-                        <h2>Non è la solita napoletana.</h2>
-                        <p>Cornicione alto, base croccante. 48 ore di lievitazione per una pizza che non ti rimane sullo stomaco.</p>
+                        <h2>Leggerezza estrema.</h2>
+                        <p>48 ore di maturazione e idratazione all'85%. Una nuvola croccante che non ti appesantisce.
+                        </p>
                     </div>
                 </div>
 
                 <div class="grid-item item-tall photo-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza">
-                    <div class="photo-tag">BEST SELLER</div>
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Pizza">
+                    <div class="photo-tag">SIGNATURE PIZZA</div>
                 </div>
 
                 <div class="grid-item accent-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>IDRATAZIONE</h3>
-                    <div class="big-number">85%</div>
-                    <p>Leggerezza Assoluta</p>
+                    <h3>TEMPERATURE</h3>
+                    <div class="big-number">400°C</div>
+                    <p>Cottura Flash in Forno a Legna</p>
                 </div>
 
                 <div class="grid-item photo-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ingredienti">
-                    <div class="photo-tag">DOP</div>
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Forno a Legna">
+                    <div class="photo-tag">IL CUORE</div>
                 </div>
 
                 <div class="grid-item item-large dark-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <div class="card-top">
+                        <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <span class="card-tag">TOPPINGS</span>
+                    </div>
                     <div class="card-text">
-                        <h3>MATERIE PRIME</h3>
-                        <h2>Solo eccellenze italiane.</h2>
-                        <p>Pomodoro San Marzano, Fiordilatte dei Monti Lattari, Olio EVO siciliano. Niente compromessi.</p>
+                        <h2>Solo eccellenze DOP.</h2>
+                        <p>Pomodoro San Marzano, Fiordilatte dei Monti Lattari, salumi artigianali. La differenza si
+                            sente.</p>
                     </div>
                 </div>
 
@@ -82,50 +130,141 @@
         </div>
     </section>
 
-    <section id="contatti" class="footer-section">
-        <div class="container footer-grid">
-            <div class="footer-cta" data-aos="fade-right">
-                <h2>Prenota il<br>tuo asporto.</h2>
-                <p>Siamo aperti da Martedì a Domenica.</p>
+    <section id="listino" class="menu-list-section">
+        <div class="container">
+
+            <div class="section-header text-center mb-60">
+                <span class="badge">CONSULTA IL LISTINO</span>
+                <h2>Le Nostre Pizze</h2>
             </div>
-            
-            <div class="footer-links" data-aos="fade-left">
-                <a href="tel:+39041000000" class="contact-box">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <span>CHIAMA ORA</span>
-                        <strong>041 123 4567</strong>
+
+            <div class="menu-category" data-aos="fade-up">
+                <h3 class="cat-title">LE CLASSICHE</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>Margherita</h4><span class="price">€ 6.00</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozzarella, Basilico fresco.</p>
                     </div>
-                </a>
-                
-                <a href="https://wa.me/390000000" class="contact-box">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <div>
-                        <span>SCRIVICI</span>
-                        <strong>WhatsApp Ordini</strong>
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>Diavola</h4><span class="price">€ 7.50</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozzarella, Salamino piccante.</p>
                     </div>
-                </a>
-                
-                <div class="contact-box plain">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <span>DOVE SIAMO</span>
-                        <strong>Via Garibaldi 10, Dolo</strong>
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>Prosciutto e Funghi</h4><span class="price">€ 8.00</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozzarella, Prosciutto Cotto, Funghi champignon.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>Capricciosa</h4><span class="price">€ 8.50</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozz., Cotto, Funghi, Carciofini, Olive.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>Viennese</h4><span class="price">€ 7.50</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozzarella, Wurstel.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-top">
+                            <h4>4 Formaggi</h4><span class="price">€ 8.00</span>
+                        </div>
+                        <p class="ingredients">Mozzarella, Gorgonzola, Emmenthal, Grana.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="copyright">
-            &copy; 2026 Pluto Pizza. All rights reserved.
+
+            <div class="menu-category mt-60" data-aos="fade-up">
+                <h3 class="cat-title text-accent">LE SPECIALI <i class="fa-solid fa-star"></i></h3>
+                <div class="menu-grid">
+                    <div class="menu-item highlight-item">
+                        <div class="menu-top">
+                            <h4>ALLO SCRICCHIO</h4><span class="price">€ 10.00</span>
+                        </div>
+                        <p class="ingredients">Pomodoro, Mozzarella, Salsiccia, Porcini, Grana a scaglie.</p>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="menu-top">
+                            <h4>Trevigiana</h4><span class="price">€ 9.00</span>
+                        </div>
+                        <p class="ingredients">Mozzarella, Radicchio di Treviso, Salsiccia, Grana.</p>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="menu-top">
+                            <h4>Vegetariana</h4><span class="price">€ 9.00</span>
+                        </div>
+                        <p class="ingredients">Pom., Mozz., Zucchine, Melanzane, Peperoni, Spinaci.</p>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="menu-top">
+                            <h4>Dolomiti</h4><span class="price">€ 9.50</span>
+                        </div>
+                        <p class="ingredients">Pom., Mozz., Speck Alto Adige, Brie, Rucola.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-60">
+                <a href="menu.pdf" download="Menu Pizze" class="btn-outline">
+                    <i class="fa-solid fa-file-pdf"></i> Scarica Menu Completo (PDF)
+                </a>
+            </div>
+
         </div>
     </section>
+
+    <footer id="contatti" class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col brand-col">
+                    <div class="logo mb-20">NERO<span class="accent">.</span></div>
+                    <p>Pizzeria d'asporto e domicilio contemporanea. Portiamo l'alta qualità a casa tua.</p>
+                    <div class="footer-social mt-30">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ORDINA & CONTATTA</h4>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-phone accent"></i> <a href="tel:+39041000000">041 123 4567</a></li>
+                        <li><i class="fa-brands fa-whatsapp accent"></i> <a href="https://wa.me/390000000">WhatsApp
+                                Ordini</a></li>
+                        <li><i class="fa-solid fa-location-dot accent"></i> <span>Via Garibaldi 10, Dolo</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ORARI APERTURA</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mar - Dom:</span> <strong>18:00 - 23:00</strong></li>
+                        <li><span>Lunedì:</span> <strong>Chiuso</strong></li>
+                    </ul>
+                    <div class="delivery-badge mt-30">
+                        <i class="fa-solid fa-motorcycle"></i> Consegna a Dolo, Sambruson, Arino.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nero Pizza. Demo realizzata per Allo Scricchio.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true, offset: 50 });
-        
-        // Navbar scroll effect solido
+
         const nav = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) nav.classList.add('scrolled');
@@ -133,4 +272,5 @@
         });
     </script>
 </body>
+
 </html>
